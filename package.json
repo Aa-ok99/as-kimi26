@@ -30,15 +30,15 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "commander": "^12.0.0",
-    "chalk": "^5.3.0",
-    "inquirer": "^9.2.0",
-    "ora": "^8.0.0",
     "boxen": "^7.1.0",
-    "node-fetch": "^3.3.0",
+    "chalk": "^4.1.2",
+    "commander": "^12.0.0",
+    "diff": "^5.2.0",
     "fs-extra": "^11.2.0",
     "glob": "^10.3.0",
-    "diff": "^5.2.0",
+    "inquirer": "^9.2.0",
+    "node-fetch": "^2.7.0",
+    "ora": "^8.0.0",
     "simple-git": "^3.22.0"
   },
   "optionalDependencies": {
@@ -47,10 +47,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/agent-teams/as-kimi26.git"
+    "url": "https://github.com/Aa-ok99/as-kimi26.git"
   },
   "bugs": {
-    "url": "https://github.com/agent-teams/as-kimi26/issues"
+    "url": "https://github.com/Aa-ok99/as-kimi26/issues"
   },
-  "homepage": "https://github.com/agent-teams/as-kimi26#readme"
+  "homepage": "https://github.com/Aa-ok99/as-kimi26#readme"
 }

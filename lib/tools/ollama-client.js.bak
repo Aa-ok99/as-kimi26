@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 
 class OllamaClient {
   constructor(config = {}) {
-    this.baseURL = config.baseURL || 'http://localhost:11434'
+    this.baseURL = config.baseURL || 'http://localhost:11434';
     this.timeout = config.timeout || 30000;
   }
 
@@ -15,17 +15,16 @@ class OllamaClient {
         },
         body: JSON.stringify({
           model: options.model || 'llama2',
-          prompt: prompt,
+          prompt,
           stream: options.stream || false
         })
       });
-
+      
       if (!response.ok) {
         throw new Error(`Ollama API error: ${response.status}`);
       }
-
-      const data = await response.json();
-      return data;
+      
+      return await response.json();
     } catch (error) {
       console.warn('Ollama client error:', error.message);
       throw error;

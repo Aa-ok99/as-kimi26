@@ -1,6 +1,5 @@
-const path = require('path');
 const chalk = require('chalk');
-const { initializeOllamaClient } = require(path.resolve(__dirname, '../tools/ollama-client'));
+const { initializeOllamaClient } = require('../lib/tools/ollama-client');
 const { loadConfig } = require('../utils/config');
 const { setupLogging } = require('../utils/logger');
 
@@ -12,10 +11,13 @@ class Launcher {
 
   async initialize() {
     console.log(chalk.cyan('Initializing Kimi 2.6 Launcher...'));
+    
     this.config = loadConfig();
     setupLogging(this.config.logging);
+    
     await initializeOllamaClient(this.config.ollama);
     this.loadAgents();
+    
     console.log(chalk.green('✓ Kimi 2.6 initialized successfully!'));
     return this;
   }
@@ -27,7 +29,7 @@ class Launcher {
       'data-guardian',
       'performance-engineer'
     ];
-
+    
     agentFiles.forEach(agentName => {
       try {
         const AgentClass = require(`../agents/${agentName}`);
