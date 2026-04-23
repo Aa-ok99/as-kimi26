@@ -1,0 +1,56 @@
+{
+  "name": "as-kimi26",
+  "version": "1.0.0",
+  "description": "Kimi 2.6 Multi-Agent Launcher for Termux - AI-powered coding assistant with Ollama integration",
+  "main": "lib/core/launcher.js",
+  "bin": {
+    "as-kimi26": "./bin/as-kimi26",
+    "kimi": "./bin/as-kimi26"
+  },
+  "scripts": {
+    "start": "node bin/as-kimi26",
+    "test": "node test/runner.js",
+    "setup": "node lib/setup.js"
+  },
+  "keywords": [
+    "kimi",
+    "kimi-2.6",
+    "ai-coding",
+    "ollama",
+    "termux",
+    "android",
+    "multi-agent",
+    "cli",
+    "coding-assistant",
+    "local-llm"
+  ],
+  "author": "Agent Teams",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.0",
+    "ora": "^8.0.0",
+    "boxen": "^7.1.0",
+    "node-fetch": "^3.3.0",
+    "fs-extra": "^11.2.0",
+    "glob": "^10.3.0",
+    "diff": "^5.2.0",
+    "simple-git": "^3.22.0"
+  },
+  "optionalDependencies": {
+    "blessed": "^0.1.81",
+    "termux-api": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agent-teams/as-kimi26.git"
+  },
+  "bugs": {
+    "url": "https://github.com/agent-teams/as-kimi26/issues"
+  },
+  "homepage": "https://github.com/agent-teams/as-kimi26#readme"
+}

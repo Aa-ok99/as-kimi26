@@ -1,0 +1,8 @@
+{
+  "name": "as-kimi26",
+  "version": "1.0.0",
+  "description": "Kimi 2.6 Multi-Agent Launcher for Termux",
+  "main": "lib/core/launcher.js",
+  "author": "Agent Teams",
+  "license": "MIT"
+}
